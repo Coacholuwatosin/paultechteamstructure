@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Team Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+
+    #teamSection {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1e1e1e, #121212);
+    }
+
+    #teamTitle {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    #teamTitle h1 {
+      font-size: 50px;
+      font-weight: bold;
+      animation: slideIn 0.5s forwards;
+    }
+
+    #teamTitle p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .teamMember {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+      animation-delay: 0.2s; 
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .teamMember:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .teamMember img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ffffff;
+      transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
+
+    .teamMember img:hover {
+      transform: scale(1.05);
+    }
+
+    #ceoSection {
+      padding: 40px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    #ceoSection img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      border: 1px solid #FFF;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #ceoSection:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h5 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .role {
+      font-size: 18px;
+      color: #68b3f8;
+    }
+
+    #teamRow {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="teamSection">
+    <div class="container">
+      <!-- Title Section -->
+      <div id="teamTitle">
+        <h1>Meet Our Professional Team</h1>
+        <p>Our dedicated expert teams are here to provide great solutions for all your needs. We’ll work closely with you to understand your goals and deliver outstanding results.</p>
+      </div>
+
+      <!-- CEO Section -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div id="ceoSection">
+            <img src="Images/ceo.jpg" alt="CEO">
+            <h5>Oluwatosin Adegboye</h5>
+            <p class="ceoRole">CEO PaulTechnolog</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Members -->
+      <div id="teamRow" class="row text-center">
+
+        <!-- Digital Marketer -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="teamMember">
+              <img src="Images/johua.jpg" alt="joshua">
+              <h5>Joshua Olarewaju</h5>
+              <p class="role">Digital Marketing Specialist</p>
+            </div>
+          </div>
+
+
+        <!-- Mobile App and Website Development -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="teamMember">
+            <img src="Images/tahal.jpg" alt="Tahal">
+            <h5>Mohammad Tahal</h5>
+            <p class="role">Mobile App & Website Developer</p>
+          </div>
+        </div>
+
+        <!-- Shopify Store Development -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="teamMember">
+            <img src="Images/wumi.jpg" alt="Emily White">
+            <h5>Blessing Adeyemi</h5>
+            <p class="role">Shopify Store Developer</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="teamMember">
+            <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="nimal">
+            <h5>Nimal Yasir</h5>
+            <p class="role">Wordpress Website Developer</p>
+          </div>
+        </div>
+
+        <!-- Custom UI/UX Design -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="teamMember">
+              <img src="Images/pos.jpg" alt="joy">
+              <h5>Abraham Joy</h5>
+              <p class="role">Custom UI/UX Designer</p>
+            </div>
+          </div>
+
+        <!-- Content Writer -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="teamMember">
+            <img src="Images/michael.jpg" alt="michael">
+            <h5>Michael Oyenuga</h5>
+            <p class="role">Content Writer</p>
+          </div>
+        </div>
+
+        <!-- SEO Specialist -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="teamMember">
+            <img src="Images/ezekieal.jpg" alt="Ezekiel">
+            <h5>Ezekiel Eric</h5>
+            <p class="role">SEO Specialist</p>
+          </div>
+        </div>
+
+        <!-- Graphic Designer -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="teamMember">
+            <img src="Images/praise.jpg" alt="praise">
+            <h5>Gideon Praise</h5>
+            <p class="role">Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
